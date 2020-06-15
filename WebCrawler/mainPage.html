@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 4px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
+<title>WebCrawler</title>
+</head>
+<body>
+	<h1 style="color: #5e9ca0; text-align: center;">
+		<img style="font-size: 14px;"
+			src="https://f0.pngfuel.com/png/617/656/round-black-and-white-illustration-png-clip-art.png"
+			alt="Round black and white illustration, Spider Cartoon Animation, Cute ..."
+			width="37" height="21" />Web Crawler
+	</h1>
+
+	<p style="text-align: center;">This web Crawler is a tool that
+		crawl a given URL, and returns all the URL's contained in the web site
+		and, its Media files, and index of words.&nbsp;</p>
+
+
+	<h2 style="color: #2e6c80; text-align: center;">How to use it:</h2>
+
+	<!-- First, enter an URL to crawl !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<h4>
+		<span
+			style="background-color: #ccffcc; margin-left: auto; margin-right: auto;">First,
+			enter an URL to crawl</span>
+	</h4>
+
+	<form target="_self" method="get">
+		<div class="url">
+
+			<input style="margin: 0px; width: 457px; height: 17px;" type="url"
+				id="crawlingURL" name="url" placeholder="Enter your URL here..."><br>
+			<p></p>
+			<input type="submit" value="Crawl">
+		</div>
+	</form>
+
+
+
+	<div id="desplayUrlResult" style="background-color: #fcffcc">
+		<!-- <h5>List of URL found:</h5> -->
+
+
+	</div>
+
+	<div id="desplayUrlResult" style="background-color: #fcffcc">
+		<!-- <h5>List of URL found:</h5> -->
+		<table id="table">
+			
+		</table>
+
+	</div>
+	<h4>
+		&nbsp;<span style="background-color: #ccffcc;">Then enter a
+			word to search:</span>
+	</h4>
+	<form target="_self" method="get">
+		<div class="word">
+
+			<input style="margin: 0px; width: 457px; height: 17px;" type="text"
+				id="wordToSearch" name="wordToSearch"
+				placeholder="Enter your word here..."><br>
+			<p></p>
+			<input type="submit" value="search">
+		</div>
+	</form>
+
+
+
+	<div id="desplayUrlResult" style="background-color: #fcffcc">
+		<!-- <h5>List of links where the word appears</h5> -->
+
+	</div>
+
+	<h4>
+		<span style="background-color: #ccffcc; text-align: center;">Do
+			you want to try again?&nbsp;</span>
+	</h4>
+	
+	<form target="_self" method="get">
+		<input type="submit" name="reset" value="Reset">
+	</form>
+	
+
+
+
+</body>
+</html>
+
